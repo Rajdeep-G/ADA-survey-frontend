@@ -21,8 +21,12 @@ export async function submitSurvey({ uid, answers }) {
   }
 }
 
-export async function checkUidExists(uid) {
-  const res = await fetch(`/api/check/${uid}`)
-  const data = await res.json()
-  return data.exists
-}
+// export async function checkUidExists(uid) {
+//   const res = await fetch(`/api/check/${uid}`)
+//   const data = await res.json()
+//   return data.exists
+// }
+
+export const checkUidExists = async () => {
+  return false; // Always allow
+};
