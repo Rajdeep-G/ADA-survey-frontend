@@ -1,0 +1,580 @@
+{
+  "title": "User Study Survey",
+  "showProgressBar": "bottom",
+  "firstPageIsStarted": false,
+  "pageNextText": "Next subsection",
+  "completeText": "Submit",
+  "showQuestionNumbers": "off",
+  "pages": [
+    {
+      "name": "A1",
+      "title": "Google Account, Device information and usage",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A1_T1",
+          "html": "<p>In the following section, we will ask you some general questions related to your usage of Google services, your knowledge of Google Account features, and your current Google Account usage habits.\n<br><br>A “primary Google Account” refers to the Google (Gmail) account you use most frequently for your day-to-day online activities (such as email, Google Search, YouTube, Maps, Drive, or logging into apps/websites).</p>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q1",
+          "title": "How long have you been using your primary Google Account (on your laptop or Android smartphone)?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Around a few weeks",
+            "Around a few months",
+            "Around a year",
+            "Around 2 years",
+            "Around 3 years",
+            "More than 3 years"
+          ]
+        },
+        {
+          "type": "html",
+          "name": "A1_T2",
+          "html": "<p>You may use your primary Google Account across different devices. Please tell us how long you have been using this account on the following devices:</p>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q2",
+          "title": "On your laptop/desktop browser (for logging into Google services such as Search, Drive, Gmail, YouTube, or Maps):",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Around a few weeks",
+            "Around a few months",
+            "Around a year",
+            "Around 2 years",
+            "Around 3 years",
+            "More than 3 years"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q3",
+          "title": "On your Android smartphone (for logging into your phone or Google services such as Gmail, Play Store, Maps, YouTube, etc.):",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Around a few weeks",
+            "Around a few months",
+            "Around a year",
+            "Around 2 years",
+            "Around 3 years",
+            "More than 3 years",
+            "Do not use an Android smartphone"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q4",
+          "title": "Which of the following Google services have you ever used? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Google Search",
+            "Gmail",
+            "YouTube",
+            "Google Maps",
+            "Google Drive",
+            "Google Photos",
+            "Google Calendar",
+            "Google Docs",
+            "Google Sheets",
+            "Google Slides",
+            "Google Forms",
+            "Google Meet",
+            "Google Chat",
+            "Google Keep",
+            "Google Chrome (as a browser)",
+            "Chrome Web Store",
+            "Google Play Store",
+            "Google Play Services",
+            "Google Play Movies / Google TV",
+            "Google Play Music",
+            "Google Play Games",
+            "Google Assistant",
+            "Google Home / Nest Devices",
+            "Google Fit",
+            "Google Pay",
+            "Google Wallet",
+            "Google News",
+            "Google Classroom",
+            "Google Translate",
+            "Google Lens",
+            "Google Podcasts",
+            "Google Earth",
+            "Google Street View",
+            "Google Books",
+            "Google Shopping",
+            "Google Flights",
+            "Google Finance",
+            "Google One (cloud subscription)",
+            "Google My Activity Dashboard",
+            "Google Account Settings / Privacy & Personalization Page",
+            "Google Ads (viewing/personalization settings)",
+            "Google Stadia",
+            "Blogger"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q5",
+          "title": "Which of the following Google services have you used the most in the last 2 years? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Google Search",
+            "Gmail",
+            "YouTube",
+            "Google Maps",
+            "Google Drive",
+            "Google Photos",
+            "Google Calendar",
+            "Google Docs",
+            "Google Sheets",
+            "Google Slides",
+            "Google Forms",
+            "Google Meet",
+            "Google Chat",
+            "Google Keep",
+            "Google Chrome (as a browser)",
+            "Chrome Web Store",
+            "Google Play Store",
+            "Google Play Services",
+            "Google Play Movies / Google TV",
+            "Google Play Music",
+            "Google Play Games",
+            "Google Assistant",
+            "Google Home / Nest Devices",
+            "Google Fit",
+            "Google Pay",
+            "Google Wallet",
+            "Google News",
+            "Google Classroom",
+            "Google Translate",
+            "Google Lens",
+            "Google Podcasts",
+            "Google Earth",
+            "Google Street View",
+            "Google Books",
+            "Google Shopping",
+            "Google Flights",
+            "Google Finance",
+            "Google One (cloud subscription)",
+            "Google My Activity Dashboard",
+            "Google Account Settings / Privacy & Personalization Page",
+            "Google Ads (viewing/personalization settings)",
+            "Google Stadia",
+            "Blogger"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q6",
+          "title": "For what primary purposes do you use your Google Account? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 2,
+          "choices": [
+            "Personal communication (Gmail, Google Meet, Contacts)",
+            "Entertainment (YouTube, Play Movies, YouTube Music)",
+            "Web browsing and syncing across devices (Chrome)",
+            "Productivity (Google Docs, Sheets, Slides, Drive)",
+            "Navigation and location-based services (Maps, Timeline)",
+            "Social media logins / Single Sign-On (“Sign in with Google”)",
+            "Work or academic purposes"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q7",
+          "title": "On average, within a 24-hour period, approximately how many hours do you use any Google services while signed into your Google Account (across any device)?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Less than 2 hours",
+            "2 to 6 hours",
+            "6 to 10 hours",
+            "More than 10 hours",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q8",
+          "title": "Do you know what “Chrome Sync” is?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q9",
+          "title": "Do you keep Chrome Sync turned on across your devices?",
+          "isRequired": true,
+          "visibleIf": "{A1_Q8} = 'Yes'",
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "html",
+          "name": "A1_T3",
+          "visibleIf": "{A1_Q8} = 'No' or {A1_Q8} = 'I am not sure'",
+          "html": "<div style='padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;background:#fafafa'><strong>Don’t know about Chrome Sync?</strong><br><br>Chrome Sync is a feature of the Google Chrome browser that allows users to synchronize their browsing data across devices when they are signed into their Google Account. When Chrome Sync is enabled, data such as browsing history, bookmarks, saved passwords, autofill information, open tabs, extensions, and browser settings can be automatically shared across all devices where the same account is signed in. This provides convenience by allowing a seamless browsing experience across devices. However, enabling Chrome Sync means that the synced data may be stored in your Google Account, and accessing a device where you are signed in may expose your synced browsing information to others who use that device.</div>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q10",
+          "title": "If given a choice, would you prefer to keep Chrome Sync enabled on your devices?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q11",
+          "title": "Have you ever explored or modified your Google Account settings (e.g., privacy settings, security settings, personalization)?",
+          "isRequired": true,
+          "colCount": 2,
+          "choices": [
+            "Yes, multiple times",
+            "Yes, once or twice",
+            "I am aware of them but have never explored",
+            "I was not aware these settings existed"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q12",
+          "title": "Which of the following Google services do you use most frequently? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Google Search",
+            "YouTube",
+            "Gmail",
+            "Google Maps",
+            "Google Drive (Docs/Sheets/Slides)",
+            "Google Photos",
+            "Chrome browser (signed-in)",
+            "Google Assistant",
+            "Google Calendar",
+            "Google Play Store"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q13",
+          "title": "Which is the one Google service you use the most from the above?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Google Search",
+            "YouTube",
+            "Gmail",
+            "Google Maps",
+            "Google Drive (Docs/Sheets/Slides)",
+            "Google Photos",
+            "Chrome browser (signed-in)",
+            "Google Assistant",
+            "Google Calendar",
+            "Google Play Store"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q14",
+          "title": "From where do you mostly use these Google services?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Smartphone (Android)",
+            "Laptop/Desktop",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q15",
+          "title": "Do you ever use “Sign in with Google” to log into third-party applications and websites?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q16",
+          "title": "Before allowing a website or app to connect to your Google Account using “Sign in with Google”, how often do you review the permissions requested (e.g., access to profile, email, contacts, Drive files)?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Always",
+            "Sometimes",
+            "Never",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q17_ACK1",
+          "title": "What is the shape of a red ball?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Red",
+            "Round",
+            "Blue",
+            "Square"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q18",
+          "title": "Have you ever refused to use “Sign in with Google” for an app or service, even though it was convenient, due to privacy concerns?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "text",
+          "name": "A1_Q19",
+          "title": "Can you briefly (a couple of words) mention what kind of data associated with your Google Account you consider most private?",
+          "isRequired": true,
+          "maxLength": 120,
+          "placeholder": "e.g., search history, photos, contacts"
+        },
+        {
+          "type": "comment",
+          "name": "A1_Q20",
+          "title": "Can you list the names of some Google services or connected apps that you feel might have access to your most private data? (Optional)",
+          "isRequired": false,
+          "maxLength": 600,
+          "placeholder": "e.g., Google Photos, Drive, third-party connected apps"
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q21",
+          "title": "Do you use any of the following authentication mechanisms to secure your Google Account? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Password",
+            "2-Step Verification (OTP / phone prompt)",
+            "Backup codes",
+            "Security key",
+            "None"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q22",
+          "title": "Do you also use any of the following methods to conveniently stay signed in to Google across devices? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "“Stay signed in” option on browser",
+            "Password manager",
+            "Device-level biometric unlock (phone/laptop)",
+            "Trusted device login",
+            "I don’t use any such mechanisms"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "comment",
+          "name": "A1_Q23",
+          "title": "Please tell us in brief (1–3 sentences) if you use any additional tools or mechanisms to protect the privacy of data associated with your Google Account. (Optional)",
+          "isRequired": false,
+          "maxLength": 600,
+          "placeholder": "e.g., VPN, containerized browsing, extension names"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q24",
+          "title": "Are you currently using (or have previously used) any privacy or security-enhancing tools on your browser or devices while signed into Google?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q25",
+          "title": "Have you ever heard of the Google Account “My Activity” dashboard before the screening survey?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q26",
+          "title": "Please choose the ecosystem that best describes the device you primarily use to access Google services.",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Windows",
+            "macOS",
+            "Android",
+            "iOS",
+            "ChromeOS",
+            "Linux"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        }
+      ]
+    },
+    {
+      "name": "A2",
+      "title": "Section A — Subsection 2",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "A2_Q1",
+          "title": "Rate your confidence in managing cookies and site data.",
+          "minRateDescription": "Low",
+          "maxRateDescription": "High",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "A2_Q2",
+          "title": "Briefly describe one privacy action you took recently.",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "B1",
+      "title": "Section B — Subsection 1",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "B1_Q1",
+          "title": "I can identify which activity items may be privacy-sensitive.",
+          "minRateDescription": "Strongly disagree",
+          "maxRateDescription": "Strongly agree",
+          "isRequired": true
+        },
+        {
+          "type": "radiogroup",
+          "name": "B1_Q2",
+          "title": "Do you review your Google ‘My Activity’ dashboard?",
+          "choices": [
+            "Regularly",
+            "Occasionally",
+            "Rarely",
+            "Never"
+          ],
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "B2",
+      "title": "Section B — Subsection 2",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "B2_Q1",
+          "title": "The ‘My Activity’ dashboard helps me make informed decisions.",
+          "minRateDescription": "Strongly disagree",
+          "maxRateDescription": "Strongly agree",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "B2_Q2",
+          "title": "What would make it easier to manage your activity data?",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "C1",
+      "title": "Section C — Subsection 1",
+      "elements": [
+        {
+          "type": "radiogroup",
+          "name": "C1_Q1",
+          "title": "Would you like to receive reminders to review sensitive items?",
+          "choices": [
+            "Yes",
+            "No",
+            "Not sure"
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "rating",
+          "name": "C1_Q2",
+          "title": "How likely are you to delete sensitive items you find?",
+          "minRateDescription": "Not likely",
+          "maxRateDescription": "Very likely",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "C2",
+      "title": "Section C — Subsection 2",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "C2_Q1",
+          "title": "Overall, how useful would a guided dashboard be for you?",
+          "minRateDescription": "Not useful",
+          "maxRateDescription": "Very useful",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "C2_Q2",
+          "title": "Anything else you’d like to share about your experience?",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
