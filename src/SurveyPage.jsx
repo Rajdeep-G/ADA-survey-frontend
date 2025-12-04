@@ -123,7 +123,6 @@ export default function SurveyPage() {
         options.showSaveSuccess("Thanks! Your response has been recorded.");
       } catch (e) {
         console.error(e);
-        
 
         const trimmed = uid.trim();
         if (!trimmed) return alert("Please enter your Unique ID.");
@@ -131,11 +130,14 @@ export default function SurveyPage() {
         const exists = await checkUidExists(trimmed);
 
         if (exists) {
-          options.showSaveError("Our records show that you have already completed this survey. Thank you!");
+          options.showSaveError(
+            "Our records show that you have already completed this survey. Thank you!"
+          );
           return;
-        }
-        else {
-          options.showSaveError(e.message || "Submission failed. Please try again later.");
+        } else {
+          options.showSaveError(
+            e.message || "Submission failed. Please try again later."
+          );
         }
       }
     });
@@ -149,6 +151,16 @@ export default function SurveyPage() {
       const btn = el.querySelector('button[id$="-btn"]');
       if (btn) {
         btn.onclick = () => sender.nextPage();
+      }
+      // 🔍 make A2_Q8 description clickable
+      if (options.question?.name === "A2_Q8") {
+        const desc = el.querySelector(".sd-question__description");
+        if (desc) {
+          desc.innerHTML =
+            "To know more about what you can do with “My Activity”, you may check: " +
+            "<a href='https://support.google.com/accounts/answer/7028918' target='_blank'>" +
+            "support.google.com/accounts/answer/7028918</a>";
+        }
       }
     });
 

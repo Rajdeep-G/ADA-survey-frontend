@@ -377,7 +377,7 @@
         {
           "type": "comment",
           "name": "A1_Q20",
-          "title": "Can you list the names of some Google services or connected apps that you feel might have access to your most private data? (Optional)",
+          "title": "Can you list the names of some Google services or connected apps that you feel might have access to your most private data?",
           "isRequired": false,
           "maxLength": 600,
           "placeholder": "e.g., Google Photos, Drive, third-party connected apps"
@@ -467,21 +467,204 @@
     },
     {
       "name": "A2",
-      "title": "Section A — Subsection 2",
+      "title": "Background Knowledge of Google “My Activity”",
       "elements": [
         {
-          "type": "rating",
-          "name": "A2_Q1",
-          "title": "Rate your confidence in managing cookies and site data.",
-          "minRateDescription": "Low",
-          "maxRateDescription": "High",
-          "isRequired": true
+          "type": "html",
+          "name": "A2_intro_MyActivity",
+          "html": "<p>In the following section, we will ask you some general questions to learn more about your knowledge of the Google “My Activity” dashboard in general and your usage of this feature in particular.</p><p>The Google “My Activity” dashboard is a service provided by Google that allows users to view, manage, and delete the activity data collected from their use of various Google services (such as Search, YouTube, Maps, Chrome, and more). “My Activity” organizes your past activity in a timeline and gives you control over what data is stored in your Google Account.</p><ul> <li>You can access the Google “My Activity” dashboard by visiting <a href='https://myactivity.google.com/' target='_blank'>https://myactivity.google.com/</a> while signed into your Google Account.</li> <li>You can also find it by going to your Google Account → Data & Privacy → History settings → My Activity.</li><li>“My Activity” allows you to view activity by date, Google product, and category. You can also delete specific items, delete activity in bulk, or turn on auto-delete for future activity.</li></ul>You can learn more about the Google “My Activity” dashboard from the official help page: <a href='https://support.google.com/accounts/answer/7028918' target='_blank'>Click here</a>"
         },
         {
-          "type": "comment",
+          "type": "radiogroup",
+          "name": "A2_Q1",
+          "title": "Which of the following best describes your level of familiarity with the Google “My Activity” dashboard?",
+          "isRequired": true,
+          "choices": [
+            "I have never heard of/noticed the Google “My Activity” dashboard before",
+            "I know somewhat about it but have never used it before",
+            "I know somewhat about it and have used it before",
+            "I know a lot about it but have never used it before",
+            "I know a lot about it and have used it before",
+            "I prefer not to answer"
+          ],
+          "hasOther": true,
+          "colCount": 3,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
           "name": "A2_Q2",
-          "title": "Briefly describe one privacy action you took recently.",
-          "isRequired": false
+          "title": "Since how long have you been aware of the Google “My Activity” dashboard?",
+          "isRequired": true,
+          "choices": [
+            "Around a few weeks",
+            "Around a few months",
+            "Around a year",
+            "Around 2 years",
+            "Around 3 years",
+            "More than 3 years"
+          ],
+          "colCount": 4
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q3",
+          "title": "On which device(s) do you primarily access the Google “My Activity” dashboard? (Select all that apply)",
+          "isRequired": true,
+          "choices": [
+            "Personal smartphone",
+            "Personal laptop/desktop",
+            "Work laptop/desktop",
+            "Shared family device",
+            "Tablet",
+            "I do not use the “My Activity” dashboard"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)",
+          "colCount": 3
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q4_ACK2",
+          "title": "This study focuses on users’ interactions with?",
+          "isRequired": true,
+          "choices": [
+            "Food delivery apps",
+            "Twitter survey",
+            "Google “My Activity” dashboard",
+            "IIT KGP"
+          ],
+          "colCount": 4
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q5",
+          "title": "How often do you access your Google “My Activity” dashboard?",
+          "isRequired": true,
+          "choices": [
+            "Multiple times a week",
+            "Once a week",
+            "A couple of times per month",
+            "Once a month",
+            "A couple of times per year",
+            "Less than once per year",
+            "Never"
+          ],
+          "colCount": 4
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q6",
+          "title": "What qualities of the Google “My Activity” dashboard encourage you to use it regularly? (Select all that apply)",
+          "visibleIf": "{A2_Q5} = 'Multiple times a week' or {A2_Q4_AccessFrequency} = 'Once a week' or {A2_Q5} = 'A couple of times per month'",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "I find it easy to use and navigate",
+            "It helps me keep track of what Google knows about me",
+            "I find the delete or auto-delete options useful",
+            "It gives me a sense of control over my data",
+            "It helps improve my privacy or security"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q7",
+          "title": "What qualities discourage you from using the Google “My Activity” dashboard regularly? (Select all that apply)",
+          "visibleIf": "{A2_Q5} = 'Once a month' or {A2_Q5} = 'A couple of times per year' or {A2_Q5} = 'Less than once per year' or {A2_Q5} = 'Never'",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "I find it confusing or difficult to navigate",
+            "I do not understand what is stored there",
+            "I do not find it useful",
+            "It feels overwhelming due to too much data",
+            "I am concerned I might delete something important",
+            "I do not think I need to review it"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q8",
+          "title": "For what purposes do you use the Google “My Activity” dashboard? (Select all that apply)",
+          "description": "To know more about what you can do with “My Activity”, you may check: <a href='https://support.google.com/accounts/answer/7028918' target='_blank'>support.google.com/accounts/answer/7028918</a>",
+          "descriptionLocation": "underTitle",
+          "allowHtml": true,
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Reviewing my past searches or activity",
+            "Deleting specific activity items",
+            "Bulk deleting activity",
+            "Turning activity tracking on/off",
+            "Changing auto-delete settings",
+            "Checking if Google stored something unexpected",
+            "Privacy or security-related reasons",
+            "I do not use it for any specific purpose"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q9",
+          "title": "How do you generally access the Google “My Activity” dashboard when you want to use it? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "By typing “my activity” on Google Search",
+            "Through Google Account → Data & Privacy settings",
+            "Through direct bookmark or saved link",
+            "Through a suggestion or link inside a Google service (e.g., YouTube/Maps)",
+            "I do not use the “My Activity” dashboard"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q10",
+          "title": "Do you think the Google “My Activity” dashboard presents your stored activity in a clear and understandable way?",
+          "isRequired": true,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ],
+          "colCount": 3
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q11",
+          "title": "Do you recall changing any of the following default settings related to activity tracking in your Google Account? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Web & App Activity",
+            "Location History",
+            "YouTube History",
+            "Auto-delete settings",
+            "Ad personalization settings",
+            "I do not recall changing any of these settings"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q12_ExploredDataPrivacySection",
+          "title": "Do you recall exploring the “Data & Privacy” section of your Google Account where “My Activity” settings are located?",
+          "isRequired": true,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ],
+          "colCount": 3
         }
       ]
     },
