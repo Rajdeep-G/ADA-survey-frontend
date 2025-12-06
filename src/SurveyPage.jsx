@@ -76,23 +76,23 @@ export default function SurveyPage() {
         const j = await res.json();
         const clone = JSON.parse(JSON.stringify(j));
 
-        // Insert “you finished Section A” between A2 -> B1
-        injectBreakPage(
-          clone,
-          "A2",
-          "A_BREAK",
-          "Section A complete 🎉",
-          "Take a breather! When you’re ready, click the button below to start Section B."
-        );
+        // // Insert “you finished Section A” between A2 -> B1
+        // injectBreakPage(
+        //   clone,
+        //   "A2",
+        //   "A_BREAK",
+        //   "Section A complete 🎉",
+        //   "Take a breather! When you’re ready, click the button below to start Section B."
+        // );
 
-        // Insert “you finished Section B” between B2 -> C1
-        injectBreakPage(
-          clone,
-          "B2",
-          "B_BREAK",
-          "Section B complete 🙌",
-          "Nice progress so far. Click below when you’re ready to begin Section C."
-        );
+        // // Insert “you finished Section B” between B2 -> C1
+        // injectBreakPage(
+        //   clone,
+        //   "B2",
+        //   "B_BREAK",
+        //   "Section B complete 🙌",
+        //   "Nice progress so far. Click below when you’re ready to begin Section C."
+        // );
 
         if (!cancelled) setSchema(clone);
       } catch (e) {

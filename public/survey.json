@@ -899,6 +899,7 @@
           "name": "A3_Q16",
           "title": "How comfortable would you feel if Google stored activity logs (e.g., search/query text, visited links, timestamps) from each of the scenarios listed below?",
           "isRequired": true,
+          "rowTitleWidth": "250px",
           "columns": [
             "Very comfortable",
             "Slightly comfortable",
@@ -965,6 +966,7 @@
           "name": "A3_Q19",
           "title": "How comfortable would you feel if Google stored the detailed content of your activity (e.g., exact search queries, viewed links, watched videos) from each of the above scenarios?",
           "isRequired": true,
+          "rowTitleWidth": "250px",
           "columns": [
             "Very comfortable",
             "Slightly comfortable",
@@ -1056,6 +1058,7 @@
           "name": "A3_Q24",
           "title": "For each of the following cases, when do you think it would be acceptable for Google to collect and store your activity data across its services (e.g., Search, YouTube, Maps, Chrome)?",
           "isRequired": true,
+          "rowTitleWidth": "350px",
           "columns": [
             "Always acceptable",
             "Sometimes acceptable",
@@ -1457,6 +1460,7 @@
           "name": "A5_Q2",
           "title": "How comfortable would you feel if Google collected and stored the following categories of activity data across its services?",
           "isRequired": true,
+          "rowTitleWidth": "250px",
           "columns": [
             "Very comfortable",
             "Slightly comfortable",
@@ -1515,6 +1519,7 @@
           "name": "A5_Q4_ACK6",
           "title": "Earlier, we mentioned the name of the browser extension used in this study. What is it called?",
           "isRequired": true,
+          "colCount": 2,
           "choices": [
             "ADA (Adaptive Data Dashboard)",
             "AIDA (Artificial Intelligent Data Assistant)",
@@ -1545,6 +1550,7 @@
           "name": "A5_Q6",
           "title": "How comfortable would you feel if Google collected and stored the following categories of cross-device activity data?",
           "isRequired": true,
+          "rowTitleWidth": "250px",
           "columns": [
             "Very comfortable",
             "Slightly comfortable",
@@ -1874,7 +1880,7 @@
           "validators": [
             {
               "type": "regex",
-              "regex": "^12$",
+              "regex": "^[0-9]$",
               "text": "Please enter the correct answer."
             }
           ]
@@ -1997,6 +2003,7 @@
           "name": "A8_Q11_ACk10",
           "title": "Which of the following statements is true about the ADA extension used in this study?",
           "isRequired": true,
+          "colCount":2,
           "choices": [
             "ADA sends your Google Activity data to the researchers",
             "ADA sells your data to third parties",
