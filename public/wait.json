@@ -662,7 +662,7 @@
     ]
   },
   {
-    "name": "B1",
+    "name": "A3",
     "title": "Usage of Google “My Activity” and Google services",
     "elements": [
       {
@@ -1103,6 +1103,308 @@
         "title": "Can you please briefly (1–3 sentences) explain your answer choices for the cases where you selected “Sometimes acceptable” or “Never acceptable” in the previous question?",
         "isRequired": false,
         "maxLength": 800
+      }
+    ]
+  },
+  {
+    "name": "A4",
+    "title": "Questions after exploring Google Activity Dashboard",
+    "elements": [
+      {
+        "type": "html",
+        "name": "A4_T1",
+        "html": "<p>In the following section, we will ask you a few questions to learn more about your awareness and experience after exploring the Google “My Activity” dashboard.</p>"
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q1",
+        "title": "Before this study, did you know that you can view and manage the activity data collected by Google (via its various services) through the Google “My Activity” dashboard?",
+        "isRequired": true,
+        "colCount": 4,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "checkbox",
+        "name": "A4_Q2",
+        "title": "If you answered “Yes” above: How did you first come to know about the Google “My Activity” dashboard? (Select all that apply)",
+        "visibleIf": "{A4_Q1} = 'Yes'",
+        "isRequired": true,
+        "colCount": 4,
+        "choices": [
+          "Search engine",
+          "Social media",
+          "YouTube or other online video",
+          "Word of mouth",
+          "School or workplace",
+          "While exploring Google Account settings"
+        ],
+        "hasOther": true,
+        "otherText": "Other (please specify)"
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q3",
+        "title": "Have you ever visited your Google “My Activity” dashboard before today?",
+        "isRequired": true,
+        "colCount": 4,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "checkbox",
+        "name": "A4_Q4",
+        "title": "If you have visited it before: What was the main reason you visited your Google “My Activity” dashboard? (Select all that apply)",
+        "visibleIf": "{A4_Q3} = 'Yes'",
+        "isRequired": true,
+        "colCount": 3,
+        "choices": [
+          "To view my stored activity",
+          "To delete some activity",
+          "To manage privacy or activity settings",
+          "To explore what Google stores about me",
+          "Out of curiosity"
+        ],
+        "hasOther": true,
+        "otherText": "Other (please specify)"
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q5",
+        "title": "If you have visited it before: How often do you visit your Google “My Activity” dashboard?",
+        "visibleIf": "{A4_Q3} = 'Yes'",
+        "isRequired": true,
+        "colCount": 4,
+        "choices": [
+          "Multiple times a week",
+          "Once a week",
+          "A couple of times per month",
+          "Once a month",
+          "A couple of times per year",
+          "Less than once per year",
+          "Never"
+        ]
+      },
+      {
+        "type": "checkbox",
+        "name": "A4_Q6",
+        "title": "After exploring your Google activity dashboard, which product categories did you check out? (Select all that apply)",
+        "isRequired": true,
+        "colCount": 5,
+        "choices": [
+          "Ads",
+          "Android",
+          "Assistant",
+          "Chrome",
+          "Discover",
+          "Drive",
+          "Gmail",
+          "Google Play",
+          "Image Search",
+          "Location History",
+          "Maps",
+          "News",
+          "Search",
+          "Shopping",
+          "Voice & Audio",
+          "YouTube"
+        ],
+        "hasOther": true,
+        "otherText": "Other (please specify)"
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q7",
+        "title": "Would you like to visit your Google “My Activity” dashboard more often in the future?",
+        "isRequired": true,
+        "colCount": 4,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "comment",
+        "name": "A4_Q8",
+        "title": "Can you please briefly (1–3 sentences) explain your answer choice for the previous question?",
+        "isRequired": false,
+        "maxLength": 600
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q9",
+        "title": "How comfortable did you feel while viewing the collected data on your Google “My Activity” dashboard?",
+        "isRequired": true,
+        "colCount": 3,
+        "choices": [
+          "Very comfortable",
+          "Slightly comfortable",
+          "Neither comfortable nor uncomfortable",
+          "Slightly uncomfortable",
+          "Very uncomfortable"
+        ]
+      },
+      {
+        "type": "comment",
+        "name": "A4_Q10",
+        "title": "Can you please briefly (1–3 sentences) explain your answer choice for the previous question?",
+        "isRequired": false,
+        "maxLength": 600
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q11_ACK5",
+        "title": "Please ignore the question and select “No, not at all”. How familiar are you with browser extensions?",
+        "isRequired": true,
+        "colCount": 5,
+        "choices": [
+          "Very familiar",
+          "Somewhat familiar",
+          "Neutral",
+          "No, not at all",
+          "Not sure"
+        ]
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q12",
+        "title": "How easy or difficult was it for you to find what you were looking for?",
+        "isRequired": true,
+        "colCount": 5,
+        "choices": [
+          "Very easy",
+          "Slightly easy",
+          "Neither easy nor difficult",
+          "Slightly difficult",
+          "Very difficult"
+        ]
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q13",
+        "title": "Did you face any difficulties or problems while navigating through your Google “My Activity” dashboard?",
+        "isRequired": true,
+        "colCount": 4,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "comment",
+        "name": "A4_Q14",
+        "title": "If you faced any difficulties, please specify:",
+        "visibleIf": "{A4_Q12} = 'Yes'",
+        "isRequired": false,
+        "maxLength": 600
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q15",
+        "title": "Would you like some assistance in using your Google “My Activity” dashboard?",
+        "isRequired": true,
+        "colCount": 4,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q16",
+        "title": "Would you like some assistance in finding sensitive data and deleting it from Google data storage facilities?",
+        "isRequired": true,
+        "colCount": 5,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q17",
+        "title": "Earlier in this study, we informed you that by default, Google collects a variety of activity data across its services when you are signed into your Google Account. Would you be willing to delete some of the activity data currently stored in your Google Account?",
+        "isRequired": true,
+        "colCount": 5,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "comment",
+        "name": "A4_Q18",
+        "title": "Can you please briefly (1–3 sentences) explain your answer choice for the previous question?",
+        "isRequired": false,
+        "maxLength": 600
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q19",
+        "title": "Google provides users with options to automatically delete their activity data after 3 months or 18 months. Would you be willing to enable the auto-delete setting for your Google activity data?",
+        "isRequired": true,
+        "colCount": 4,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q20",
+        "title": "Did you know about this option prior to today’s study?",
+        "isRequired": true,
+        "colCount": 5,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q21",
+        "title": "Do you feel that tech companies, in general, tend to make it difficult for users to access, review, or manage their collected data?",
+        "isRequired": true,
+        "colCount": 5,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "radiogroup",
+        "name": "A4_Q22",
+        "title": "Have you ever gone through Google’s privacy policy or data practices documentation?",
+        "isRequired": true,
+        "colCount": 5,
+        "choices": [
+          "Yes",
+          "No",
+          "Maybe"
+        ]
+      },
+      {
+        "type": "rating",
+        "name": "A4_Q23",
+        "title": "On a scale of 1 to 5, with 1 being the least and 5 being the most, how much do you trust Google not to misuse your activity data, after participating in this study?",
+        "isRequired": true,
+        "rateMin": 1,
+        "rateMax": 5,
+        "step": 1
       }
     ]
   }

@@ -8,26 +8,6 @@
   "pages": [
 
     {
-      "name": "B2",
-      "title": "Section B — Subsection 2",
-      "elements": [
-        {
-          "type": "rating",
-          "name": "B2_Q1",
-          "title": "The ‘My Activity’ dashboard helps me make informed decisions.",
-          "minRateDescription": "Strongly disagree",
-          "maxRateDescription": "Strongly agree",
-          "isRequired": true
-        },
-        {
-          "type": "comment",
-          "name": "B2_Q2",
-          "title": "What would make it easier to manage your activity data?",
-          "isRequired": false
-        }
-      ]
-    },
-    {
       "name": "C1",
       "title": "Section C — Subsection 1",
       "elements": [
