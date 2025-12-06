@@ -6,6 +6,2144 @@
   "completeText": "Submit",
   "showQuestionNumbers": "off",
   "pages": [
-   
+    {
+      "name": "A1",
+      "title": "Google Account, Device information and usage",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A1_T1",
+          "html": "<p>In the following section, we will ask you some general questions related to your usage of Google services, your knowledge of Google Account features, and your current Google Account usage habits.\n<br><br>A “primary Google Account” refers to the Google (Gmail) account you use most frequently for your day-to-day online activities (such as email, Google Search, YouTube, Maps, Drive, or logging into apps/websites).</p>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q1",
+          "title": "How long have you been using your primary Google Account (on your laptop or Android smartphone)?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Around a few weeks",
+            "Around a few months",
+            "Around a year",
+            "Around 2 years",
+            "Around 3 years",
+            "More than 3 years"
+          ]
+        },
+        {
+          "type": "html",
+          "name": "A1_T2",
+          "html": "<p>You may use your primary Google Account across different devices. Please tell us how long you have been using this account on the following devices:</p>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q2",
+          "title": "On your laptop/desktop browser (for logging into Google services such as Search, Drive, Gmail, YouTube, or Maps):",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Around a few weeks",
+            "Around a few months",
+            "Around a year",
+            "Around 2 years",
+            "Around 3 years",
+            "More than 3 years"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q3",
+          "title": "On your Android smartphone (for logging into your phone or Google services such as Gmail, Play Store, Maps, YouTube, etc.):",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Around a few weeks",
+            "Around a few months",
+            "Around a year",
+            "Around 2 years",
+            "Around 3 years",
+            "More than 3 years",
+            "Do not use an Android smartphone"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q4",
+          "title": "Which of the following Google services have you ever used? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Google Search",
+            "Gmail",
+            "YouTube",
+            "Google Maps",
+            "Google Drive",
+            "Google Photos",
+            "Google Calendar",
+            "Google Docs",
+            "Google Sheets",
+            "Google Slides",
+            "Google Forms",
+            "Google Meet",
+            "Google Chat",
+            "Google Keep",
+            "Google Chrome (as a browser)",
+            "Chrome Web Store",
+            "Google Play Store",
+            "Google Play Services",
+            "Google Play Movies / Google TV",
+            "Google Play Music",
+            "Google Play Games",
+            "Google Assistant",
+            "Google Home / Nest Devices",
+            "Google Fit",
+            "Google Pay",
+            "Google Wallet",
+            "Google News",
+            "Google Classroom",
+            "Google Translate",
+            "Google Lens",
+            "Google Podcasts",
+            "Google Earth",
+            "Google Street View",
+            "Google Books",
+            "Google Shopping",
+            "Google Flights",
+            "Google Finance",
+            "Google One (cloud subscription)",
+            "Google My Activity Dashboard",
+            "Google Account Settings / Privacy & Personalization Page",
+            "Google Ads (viewing/personalization settings)",
+            "Google Stadia",
+            "Blogger"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q5",
+          "title": "Which of the following Google services have you used the most in the last 2 years? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Google Search",
+            "Gmail",
+            "YouTube",
+            "Google Maps",
+            "Google Drive",
+            "Google Photos",
+            "Google Calendar",
+            "Google Docs",
+            "Google Sheets",
+            "Google Slides",
+            "Google Forms",
+            "Google Meet",
+            "Google Chat",
+            "Google Keep",
+            "Google Chrome (as a browser)",
+            "Chrome Web Store",
+            "Google Play Store",
+            "Google Play Services",
+            "Google Play Movies / Google TV",
+            "Google Play Music",
+            "Google Play Games",
+            "Google Assistant",
+            "Google Home / Nest Devices",
+            "Google Fit",
+            "Google Pay",
+            "Google Wallet",
+            "Google News",
+            "Google Classroom",
+            "Google Translate",
+            "Google Lens",
+            "Google Podcasts",
+            "Google Earth",
+            "Google Street View",
+            "Google Books",
+            "Google Shopping",
+            "Google Flights",
+            "Google Finance",
+            "Google One (cloud subscription)",
+            "Google My Activity Dashboard",
+            "Google Account Settings / Privacy & Personalization Page",
+            "Google Ads (viewing/personalization settings)",
+            "Google Stadia",
+            "Blogger"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q6",
+          "title": "For what primary purposes do you use your Google Account? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 2,
+          "choices": [
+            "Personal communication (Gmail, Google Meet, Contacts)",
+            "Entertainment (YouTube, Play Movies, YouTube Music)",
+            "Web browsing and syncing across devices (Chrome)",
+            "Productivity (Google Docs, Sheets, Slides, Drive)",
+            "Navigation and location-based services (Maps, Timeline)",
+            "Social media logins / Single Sign-On (“Sign in with Google”)",
+            "Work or academic purposes"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q7",
+          "title": "On average, within a 24-hour period, approximately how many hours do you use any Google services while signed into your Google Account (across any device)?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Less than 2 hours",
+            "2 to 6 hours",
+            "6 to 10 hours",
+            "More than 10 hours",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q8",
+          "title": "Do you know what “Chrome Sync” is?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q9",
+          "title": "Do you keep Chrome Sync turned on across your devices?",
+          "isRequired": true,
+          "visibleIf": "{A1_Q8} = 'Yes'",
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "html",
+          "name": "A1_T3",
+          "visibleIf": "{A1_Q8} = 'No' or {A1_Q8} = 'I am not sure'",
+          "html": "<div style='padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;background:#fafafa'><strong>Don’t know about Chrome Sync?</strong><br><br>Chrome Sync is a feature of the Google Chrome browser that allows users to synchronize their browsing data across devices when they are signed into their Google Account. When Chrome Sync is enabled, data such as browsing history, bookmarks, saved passwords, autofill information, open tabs, extensions, and browser settings can be automatically shared across all devices where the same account is signed in. This provides convenience by allowing a seamless browsing experience across devices. However, enabling Chrome Sync means that the synced data may be stored in your Google Account, and accessing a device where you are signed in may expose your synced browsing information to others who use that device.</div>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q10",
+          "title": "If given a choice, would you prefer to keep Chrome Sync enabled on your devices?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q11",
+          "title": "Have you ever explored or modified your Google Account settings (e.g., privacy settings, security settings, personalization)?",
+          "isRequired": true,
+          "colCount": 2,
+          "choices": [
+            "Yes, multiple times",
+            "Yes, once or twice",
+            "I am aware of them but have never explored",
+            "I was not aware these settings existed"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q12",
+          "title": "Which of the following Google services do you use most frequently? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Google Search",
+            "YouTube",
+            "Gmail",
+            "Google Maps",
+            "Google Drive (Docs/Sheets/Slides)",
+            "Google Photos",
+            "Chrome browser (signed-in)",
+            "Google Assistant",
+            "Google Calendar",
+            "Google Play Store"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q13",
+          "title": "Which is the one Google service you use the most from the above?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Google Search",
+            "YouTube",
+            "Gmail",
+            "Google Maps",
+            "Google Drive (Docs/Sheets/Slides)",
+            "Google Photos",
+            "Chrome browser (signed-in)",
+            "Google Assistant",
+            "Google Calendar",
+            "Google Play Store"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q14",
+          "title": "From where do you mostly use these Google services?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Smartphone (Android)",
+            "Laptop/Desktop",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q15",
+          "title": "Do you ever use “Sign in with Google” to log into third-party applications and websites?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q16",
+          "title": "Before allowing a website or app to connect to your Google Account using “Sign in with Google”, how often do you review the permissions requested (e.g., access to profile, email, contacts, Drive files)?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Always",
+            "Sometimes",
+            "Never",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q17_ACK1",
+          "title": "What is the shape of a red ball?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Red",
+            "Round",
+            "Blue",
+            "Square"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q18",
+          "title": "Have you ever refused to use “Sign in with Google” for an app or service, even though it was convenient, due to privacy concerns?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "text",
+          "name": "A1_Q19",
+          "title": "Can you briefly (a couple of words) mention what kind of data associated with your Google Account you consider most private?",
+          "isRequired": true,
+          "maxLength": 120,
+          "placeholder": "e.g., search history, photos, contacts"
+        },
+        {
+          "type": "comment",
+          "name": "A1_Q20",
+          "title": "Can you list the names of some Google services or connected apps that you feel might have access to your most private data?",
+          "isRequired": false,
+          "maxLength": 600,
+          "placeholder": "e.g., Google Photos, Drive, third-party connected apps"
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q21",
+          "title": "Do you use any of the following authentication mechanisms to secure your Google Account? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Password",
+            "2-Step Verification (OTP / phone prompt)",
+            "Backup codes",
+            "Security key",
+            "None"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A1_Q22",
+          "title": "Do you also use any of the following methods to conveniently stay signed in to Google across devices? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "“Stay signed in” option on browser",
+            "Password manager",
+            "Device-level biometric unlock (phone/laptop)",
+            "Trusted device login",
+            "I don’t use any such mechanisms"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "comment",
+          "name": "A1_Q23",
+          "title": "Please tell us in brief (1–3 sentences) if you use any additional tools or mechanisms to protect the privacy of data associated with your Google Account. (Optional)",
+          "isRequired": false,
+          "maxLength": 600,
+          "placeholder": "e.g., VPN, containerized browsing, extension names"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q24",
+          "title": "Are you currently using (or have previously used) any privacy or security-enhancing tools on your browser or devices while signed into Google?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q25",
+          "title": "Have you ever heard of the Google Account “My Activity” dashboard before the screening survey?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A1_Q26",
+          "title": "Please choose the ecosystem that best describes the device you primarily use to access Google services.",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Windows",
+            "macOS",
+            "Android",
+            "iOS",
+            "ChromeOS",
+            "Linux"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        }
+      ]
+    },
+    {
+      "name": "A2",
+      "title": "Background Knowledge of Google “My Activity”",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A2_intro_MyActivity",
+          "html": "<p>In the following section, we will ask you some general questions to learn more about your knowledge of the Google “My Activity” dashboard in general and your usage of this feature in particular.</p><p>The Google “My Activity” dashboard is a service provided by Google that allows users to view, manage, and delete the activity data collected from their use of various Google services (such as Search, YouTube, Maps, Chrome, and more). “My Activity” organizes your past activity in a timeline and gives you control over what data is stored in your Google Account.</p><ul> <li>You can access the Google “My Activity” dashboard by visiting <a href='https://myactivity.google.com/' target='_blank'>https://myactivity.google.com/</a> while signed into your Google Account.</li> <li>You can also find it by going to your Google Account → Data & Privacy → History settings → My Activity.</li><li>“My Activity” allows you to view activity by date, Google product, and category. You can also delete specific items, delete activity in bulk, or turn on auto-delete for future activity.</li></ul>You can learn more about the Google “My Activity” dashboard from the official help page: <a href='https://support.google.com/accounts/answer/7028918' target='_blank'>Click here</a>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q1",
+          "title": "Which of the following best describes your level of familiarity with the Google “My Activity” dashboard?",
+          "isRequired": true,
+          "choices": [
+            "I have never heard of/noticed the Google “My Activity” dashboard before",
+            "I know somewhat about it but have never used it before",
+            "I know somewhat about it and have used it before",
+            "I know a lot about it but have never used it before",
+            "I know a lot about it and have used it before",
+            "I prefer not to answer"
+          ],
+          "hasOther": true,
+          "colCount": 3,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q2",
+          "title": "Since how long have you been aware of the Google “My Activity” dashboard?",
+          "isRequired": true,
+          "choices": [
+            "Around a few weeks",
+            "Around a few months",
+            "Around a year",
+            "Around 2 years",
+            "Around 3 years",
+            "More than 3 years"
+          ],
+          "colCount": 4
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q3",
+          "title": "On which device(s) do you primarily access the Google “My Activity” dashboard? (Select all that apply)",
+          "isRequired": true,
+          "choices": [
+            "Personal smartphone",
+            "Personal laptop/desktop",
+            "Work laptop/desktop",
+            "Shared family device",
+            "Tablet",
+            "I do not use the “My Activity” dashboard"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)",
+          "colCount": 3
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q4_ACK2",
+          "title": "This study focuses on users’ interactions with?",
+          "isRequired": true,
+          "choices": [
+            "Food delivery apps",
+            "Twitter survey",
+            "Google “My Activity” dashboard",
+            "IIT KGP"
+          ],
+          "colCount": 4
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q5",
+          "title": "How often do you access your Google “My Activity” dashboard?",
+          "isRequired": true,
+          "choices": [
+            "Multiple times a week",
+            "Once a week",
+            "A couple of times per month",
+            "Once a month",
+            "A couple of times per year",
+            "Less than once per year",
+            "Never"
+          ],
+          "colCount": 4
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q6",
+          "title": "What qualities of the Google “My Activity” dashboard encourage you to use it regularly? (Select all that apply)",
+          "visibleIf": "{A2_Q5} = 'Multiple times a week' or {A2_Q4_AccessFrequency} = 'Once a week' or {A2_Q5} = 'A couple of times per month'",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "I find it easy to use and navigate",
+            "It helps me keep track of what Google knows about me",
+            "I find the delete or auto-delete options useful",
+            "It gives me a sense of control over my data",
+            "It helps improve my privacy or security"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q7",
+          "title": "What qualities discourage you from using the Google “My Activity” dashboard regularly? (Select all that apply)",
+          "visibleIf": "{A2_Q5} = 'Once a month' or {A2_Q5} = 'A couple of times per year' or {A2_Q5} = 'Less than once per year' or {A2_Q5} = 'Never'",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "I find it confusing or difficult to navigate",
+            "I do not understand what is stored there",
+            "I do not find it useful",
+            "It feels overwhelming due to too much data",
+            "I am concerned I might delete something important",
+            "I do not think I need to review it"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q8",
+          "title": "For what purposes do you use the Google “My Activity” dashboard? (Select all that apply)",
+          "description": "To know more about what you can do with “My Activity”, you may check: <a href='https://support.google.com/accounts/answer/7028918' target='_blank'>support.google.com/accounts/answer/7028918</a>",
+          "descriptionLocation": "underTitle",
+          "allowHtml": true,
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Reviewing my past searches or activity",
+            "Deleting specific activity items",
+            "Bulk deleting activity",
+            "Turning activity tracking on/off",
+            "Changing auto-delete settings",
+            "Checking if Google stored something unexpected",
+            "Privacy or security-related reasons",
+            "I do not use it for any specific purpose"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q9",
+          "title": "How do you generally access the Google “My Activity” dashboard when you want to use it? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "By typing “my activity” on Google Search",
+            "Through Google Account → Data & Privacy settings",
+            "Through direct bookmark or saved link",
+            "Through a suggestion or link inside a Google service (e.g., YouTube/Maps)",
+            "I do not use the “My Activity” dashboard"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q10",
+          "title": "Do you think the Google “My Activity” dashboard presents your stored activity in a clear and understandable way?",
+          "isRequired": true,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ],
+          "colCount": 3
+        },
+        {
+          "type": "checkbox",
+          "name": "A2_Q11",
+          "title": "Do you recall changing any of the following default settings related to activity tracking in your Google Account? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Web & App Activity",
+            "Location History",
+            "YouTube History",
+            "Auto-delete settings",
+            "Ad personalization settings",
+            "I do not recall changing any of these settings"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q12_ExploredDataPrivacySection",
+          "title": "Do you recall exploring the “Data & Privacy” section of your Google Account where “My Activity” settings are located?",
+          "isRequired": true,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ],
+          "colCount": 3
+        }
+      ]
+    },
+    {
+      "name": "A3",
+      "title": "Usage of Google “My Activity” and Google services",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A3_T1",
+          "html": "<p>In the following section, we will ask you some general questions to learn more about your usage of the Google “My Activity” dashboard, as well as how you interact with Google services that contribute to your stored activity. We will also ask a few questions regarding your cross-device Google usage patterns.</p><p>A Google activity log refers to the information collected by Google based on your interactions with its products and services. This may include your searches, websites visited, apps used, videos watched, voice and audio interactions, location history, and other related activities. These activity logs are stored in your Google “My Activity” dashboard and may differ across devices and products. (See the figure below)</p><div style='text-align:center; margin:16px 0;'><img src='/p1.png' style='max-width:80%; border-radius:10px;' /><div style='font-size:13px; color:#555; margin-top:6px;'>Figure: Example representation of Google activity logs</div></div><p><b>Below is some brief information to help you understand where activity logs come from and how they are stored:</b></p><ul><li>Google stores activity when you use services such as Search, YouTube, Maps, Chrome, and others while signed into your Google Account.</li><li>Activity may also be stored from multiple devices simultaneously if the same Google Account is signed in.</li><li>You can view, delete, or manage these activities by visiting <a href='https://myactivity.google.com' target='_blank'>https://myactivity.google.com</a>.</li><li>Activity logs may include timestamps, device details, product information, and, in some cases, content associated with your activity.</li></ul>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q1",
+          "title": "Approximately how long ago did you create the primary Google Account that you currently use most often?",
+          "isRequired": true,
+          "choices": [
+            "Around a few weeks",
+            "Around a few months",
+            "Around a year",
+            "Around 2 years",
+            "Around 3 years",
+            "More than 3 years"
+          ],
+          "colCount": 3
+        },
+        {
+          "type": "html",
+          "name": "A3_T2",
+          "html": "<p><b>Before answering the next set of questions, please visit your Google “My Activity” dashboard</b> (<a href='https://myactivity.google.com' target='_blank'>https://myactivity.google.com</a>) and complete the short tasks below. This will help you recall what kind of information is stored in your account.</p>"
+        },
+        {
+          "type": "html",
+          "name": "A3_T3",
+          "html": "<p><b>Task Set 1: Visit and Explore Your Activity Dashboard</b></p><ol><li>Scroll through at least 20–25 activity entries from the most recent day.</li><li>Observe the types of data stored (e.g., Search, YouTube, Maps, Ads, Android, Assistant, etc.).</li></ol>"
+        },
+        {
+          "type": "text",
+          "name": "A3_Q2",
+          "title": "Verification Question: Please write the name of any one category of activity you saw the most (e.g., Search, YouTube, Maps).",
+          "isRequired": true,
+          "placeHolder": "e.g., Search"
+        },
+        {
+          "type": "html",
+          "name": "A3_T4",
+          "html": "<p><b>Task Set 2: Check Activity by Category</b></p><ol><li>Click on “Filter by date & product”.</li><li>View activity for at least 3 different Google products (e.g., YouTube, Maps).</li></ol>"
+        },
+        {
+          "type": "checkbox",
+          "name": "A3_Q3",
+          "title": "Verification Question: Which 3 Google products did you check? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Search",
+            "YouTube",
+            "Chrome",
+            "Maps",
+            "Ads",
+            "Assistant",
+            "Play Store",
+            "Gmail"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "html",
+          "name": "A3_T5",
+          "html": "<p><b>Task Set 3: Explore Activity Over Time</b></p><ol><li>Use the date filter to view activity from: Today, Yesterday, and Last 30 days.</li></ol>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q4",
+          "title": "Verification Question: Were there noticeable differences in the types of activity stored across time periods?",
+          "isRequired": true,
+          "choices": [
+            "Yes, the types of activity changed",
+            "No, everything looked similar",
+            "I am not sure"
+          ],
+          "colCount": 3
+        },
+        {
+          "type": "html",
+          "name": "A3_T6",
+          "html": "<p><b>Now that you have explored your Google “My Activity” dashboard</b> and reviewed the types of data stored across products and time, we will ask you a few questions about your observations and experiences. Your responses should be based on what you just saw during the exploration tasks and your general awareness of how Google stores your activity data.</p>"
+        },
+        {
+          "type": "checkbox",
+          "name": "A3_Q5",
+          "title": "What kind of information do you recall Google storing about your activity across its services? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Basic profile information (such as name, birthday, phone number)",
+            "Most visited places (such as Home or Work)",
+            "Location history and routes",
+            "Search history",
+            "Websites visited via Chrome",
+            "YouTube watch and search history",
+            "Voice & audio interactions",
+            "App usage history",
+            "Ads personalization interests or profile categories",
+            "Purchase or transaction details (e.g., through Google Search, Maps, or Play Store)",
+            "I don’t recall seeing any of the above information stored"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q6",
+          "title": "Do you recall seeing any activity in your Google “My Activity” dashboard that felt unnecessary, irrelevant, or meaningless to be stored?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q7",
+          "title": "Do you recall noticing activity entries in your Google “My Activity” dashboard that you do not remember performing (e.g., accidental searches)?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q8",
+          "title": "Do you recall ever seeing activity in your Google “My Activity” dashboard that you would consider inappropriate or embarrassing if someone else saw it?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q9",
+          "title": "Do you think any person other than you might have generated activity in your Google Account at some point in time (e.g., using your device while logged in)?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A3_Q10",
+          "title": "Can you please briefly (1–3 sentences) explain your answer choice for the previous question?",
+          "isRequired": false,
+          "visibleIf": "{A3_Q9} = 'Yes' or {A3_Q9} = 'I am not sure'",
+          "maxLength": 600
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q11",
+          "title": "Do you recall using your Google Account on a shared device (such as a family laptop, school/office computer, or friend’s phone) so that some of their activity may have been logged in the Google dashboard?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q12",
+          "title": "Do you recall any instances where Google seemed to store activity that you did not intentionally perform (e.g., due to auto-sync, auto-login, or background data collection)?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q13",
+          "title": "Do you think it is possible that some activity may have been logged in your Google Account without your explicit awareness (e.g., auto-sync across devices, accidental taps, background tracking)?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q14",
+          "title": "Do you think that Google collects any kind of activity data while you are using its services (such as Search, YouTube, Maps, Chrome, etc.)?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q15_ACK3",
+          "title": "AC_3 Select the option that contains exactly five letters.",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Cat",
+            "Four",
+            "Five",
+            "Apple"
+          ]
+        },
+        {
+          "type": "matrix",
+          "name": "A3_Q16",
+          "title": "How comfortable would you feel if Google stored activity logs (e.g., search/query text, visited links, timestamps) from each of the scenarios listed below?",
+          "isRequired": true,
+          "columns": [
+            "Very comfortable",
+            "Slightly comfortable",
+            "Neither comfortable nor uncomfortable",
+            "Slightly uncomfortable",
+            "Very uncomfortable"
+          ],
+          "rows": [
+            {
+              "value": "A3_Q16_R1",
+              "text": "When you searched or browsed casually for non-important topics"
+            },
+            {
+              "value": "A3_Q16_R2",
+              "text": "When you searched for personal or sensitive information (e.g., health, finances)"
+            },
+            {
+              "value": "A3_Q16_R3",
+              "text": "When you viewed content that may be personally embarrassing or private"
+            },
+            {
+              "value": "A3_Q16_R4",
+              "text": "When you used Google services while someone else was present nearby"
+            },
+            {
+              "value": "A3_Q16_R5",
+              "text": "When another person used a device where you were logged into your Google Account"
+            },
+            {
+              "value": "A3_Q16_R6",
+              "text": "When you used Google services in shared or public spaces"
+            },
+            {
+              "value": "A3_Q16_R7",
+              "text": "When activity was logged on a public or shared device (e.g., library, office, school computer)"
+            },
+            {
+              "value": "A3_Q16_R8",
+              "text": "When activity was logged accidentally or unintentionally (e.g., mistyped queries, accidental taps)"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q17",
+          "title": "Do you think that your Google activity logs could possibly contain any sensitive or personal information?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A3_Q18",
+          "title": "Can you please briefly (1–3 sentences) explain your answer choice for the previous question?",
+          "isRequired": false,
+          "maxLength": 600
+        },
+        {
+          "type": "matrix",
+          "name": "A3_Q19",
+          "title": "How comfortable would you feel if Google stored the detailed content of your activity (e.g., exact search queries, viewed links, watched videos) from each of the above scenarios?",
+          "isRequired": true,
+          "columns": [
+            "Very comfortable",
+            "Slightly comfortable",
+            "Neither comfortable nor uncomfortable",
+            "Slightly uncomfortable",
+            "Very uncomfortable"
+          ],
+          "rows": [
+            {
+              "value": "A3_Q19_R1",
+              "text": "Casual or non-personal browsing/search activity"
+            },
+            {
+              "value": "A3_Q19_R2",
+              "text": "Searches or activity related to personal or sensitive topics (e.g., health, finances, relationships)"
+            },
+            {
+              "value": "A3_Q19_R3",
+              "text": "Activity related to content that could be embarrassing or private"
+            },
+            {
+              "value": "A3_Q19_R4",
+              "text": "Activity performed while someone else was present nearby"
+            },
+            {
+              "value": "A3_Q19_R5",
+              "text": "Activity performed by another person using a device where you were logged into your Google Account"
+            },
+            {
+              "value": "A3_Q19_R6",
+              "text": "Activity performed in environments with other people talking in the background"
+            },
+            {
+              "value": "A3_Q19_R7",
+              "text": "Activity logged on a shared or public device (e.g., school, office, café, library computer)"
+            },
+            {
+              "value": "A3_Q19_R8",
+              "text": "Activity logged accidentally or unintentionally (e.g., mis-clicks, accidental searches, auto-suggestions clicked by mistake)"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q20",
+          "title": "Do you think that the content of these activity logs could possibly contain any sensitive or personal information?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A3_Q21",
+          "title": "Can you please briefly (1–3 sentences) explain your answer choice for the previous question?",
+          "isRequired": false,
+          "maxLength": 600
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q22",
+          "title": "Would you be comfortable with Google storing this activity data (from each of the scenarios discussed above) in your Google Account?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A3_Q23_ACK4",
+          "title": "If all Android users use Google Play Store, and Sam uses Google Play Store, what can you conclude?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Sam is definitely an Android user",
+            "Sam is definitely not an Android user",
+            "Sam may or may not be an Android user",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "matrix",
+          "name": "A3_Q24",
+          "title": "For each of the following cases, when do you think it would be acceptable for Google to collect and store your activity data across its services (e.g., Search, YouTube, Maps, Chrome)?",
+          "isRequired": true,
+          "columns": [
+            "Always acceptable",
+            "Sometimes acceptable",
+            "Never acceptable"
+          ],
+          "rows": [
+            {
+              "value": "A3_Q24_R1",
+              "text": "If you have explicitly consented to Google collecting your activity data"
+            },
+            {
+              "value": "A3_Q24_R2",
+              "text": "If Google does not notify you while collecting your activity data"
+            },
+            {
+              "value": "A3_Q24_R3",
+              "text": "If Google explicitly notifies you while collecting some/all of your activity data"
+            },
+            {
+              "value": "A3_Q24_R4",
+              "text": "If Google anonymizes (removes personally identifiable information from) your activity data before storing it"
+            },
+            {
+              "value": "A3_Q24_R5",
+              "text": "If you get financial rewards (in the form of discounts, gift cards, coupons, etc.) for allowing Google to store your activity data"
+            },
+            {
+              "value": "A3_Q24_R6",
+              "text": "If your activity data is used to improve the performance of Google services"
+            },
+            {
+              "value": "A3_Q24_R7",
+              "text": "If your activity data is used to develop new or personalized features for you"
+            },
+            {
+              "value": "A3_Q24_R8",
+              "text": "If your activity data is used to develop new features for the Google activity dashboard"
+            },
+            {
+              "value": "A3_Q24_R9",
+              "text": "If your activity data is stored indefinitely by Google on its data storage facilities"
+            },
+            {
+              "value": "A3_Q24_R10",
+              "text": "If your activity data is not stored indefinitely by Google on its data storage facilities"
+            }
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A3_Q25",
+          "title": "Can you please briefly (1–3 sentences) explain your answer choices for the cases where you selected “Sometimes acceptable” or “Never acceptable” in the previous question?",
+          "isRequired": false,
+          "maxLength": 800
+        }
+      ]
+    },
+    {
+      "name": "A4",
+      "title": "Questions after exploring Google Activity Dashboard",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A4_T1",
+          "html": "<p>In the following section, we will ask you a few questions to learn more about your awareness and experience after exploring the Google “My Activity” dashboard.</p>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q1",
+          "title": "Before this study, did you know that you can view and manage the activity data collected by Google (via its various services) through the Google “My Activity” dashboard?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "A4_Q2",
+          "title": "If you answered “Yes” above: How did you first come to know about the Google “My Activity” dashboard? (Select all that apply)",
+          "visibleIf": "{A4_Q1} = 'Yes'",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Search engine",
+            "Social media",
+            "YouTube or other online video",
+            "Word of mouth",
+            "School or workplace",
+            "While exploring Google Account settings"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q3",
+          "title": "Have you ever visited your Google “My Activity” dashboard before today?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "A4_Q4",
+          "title": "If you have visited it before: What was the main reason you visited your Google “My Activity” dashboard? (Select all that apply)",
+          "visibleIf": "{A4_Q3} = 'Yes'",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "To view my stored activity",
+            "To delete some activity",
+            "To manage privacy or activity settings",
+            "To explore what Google stores about me",
+            "Out of curiosity"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q5",
+          "title": "If you have visited it before: How often do you visit your Google “My Activity” dashboard?",
+          "visibleIf": "{A4_Q3} = 'Yes'",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Multiple times a week",
+            "Once a week",
+            "A couple of times per month",
+            "Once a month",
+            "A couple of times per year",
+            "Less than once per year",
+            "Never"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "A4_Q6",
+          "title": "After exploring your Google activity dashboard, which product categories did you check out? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Ads",
+            "Android",
+            "Assistant",
+            "Chrome",
+            "Discover",
+            "Drive",
+            "Gmail",
+            "Google Play",
+            "Image Search",
+            "Location History",
+            "Maps",
+            "News",
+            "Search",
+            "Shopping",
+            "Voice & Audio",
+            "YouTube"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q7",
+          "title": "Would you like to visit your Google “My Activity” dashboard more often in the future?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A4_Q8",
+          "title": "Can you please briefly (1–3 sentences) explain your answer choice for the previous question?",
+          "isRequired": false,
+          "maxLength": 600
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q9",
+          "title": "How comfortable did you feel while viewing the collected data on your Google “My Activity” dashboard?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Very comfortable",
+            "Slightly comfortable",
+            "Neither comfortable nor uncomfortable",
+            "Slightly uncomfortable",
+            "Very uncomfortable"
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A4_Q10",
+          "title": "Can you please briefly (1–3 sentences) explain your answer choice for the previous question?",
+          "isRequired": false,
+          "maxLength": 600
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q11_ACK5",
+          "title": "Please ignore the question and select “No, not at all”. How familiar are you with browser extensions?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Very familiar",
+            "Somewhat familiar",
+            "Neutral",
+            "No, not at all",
+            "Not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q12",
+          "title": "How easy or difficult was it for you to find what you were looking for?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Very easy",
+            "Slightly easy",
+            "Neither easy nor difficult",
+            "Slightly difficult",
+            "Very difficult"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q13",
+          "title": "Did you face any difficulties or problems while navigating through your Google “My Activity” dashboard?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A4_Q14",
+          "title": "If you faced any difficulties, please specify:",
+          "visibleIf": "{A4_Q12} = 'Yes'",
+          "isRequired": false,
+          "maxLength": 600
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q15",
+          "title": "Would you like some assistance in using your Google “My Activity” dashboard?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q16",
+          "title": "Would you like some assistance in finding sensitive data and deleting it from Google data storage facilities?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q17",
+          "title": "Earlier in this study, we informed you that by default, Google collects a variety of activity data across its services when you are signed into your Google Account. Would you be willing to delete some of the activity data currently stored in your Google Account?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A4_Q18",
+          "title": "Can you please briefly (1–3 sentences) explain your answer choice for the previous question?",
+          "isRequired": false,
+          "maxLength": 600
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q19",
+          "title": "Google provides users with options to automatically delete their activity data after 3 months or 18 months. Would you be willing to enable the auto-delete setting for your Google activity data?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q20",
+          "title": "Did you know about this option prior to today’s study?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q21",
+          "title": "Do you feel that tech companies, in general, tend to make it difficult for users to access, review, or manage their collected data?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A4_Q22",
+          "title": "Have you ever gone through Google’s privacy policy or data practices documentation?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "rating",
+          "name": "A4_Q23",
+          "title": "On a scale of 1 to 5, with 1 being the least and 5 being the most, how much do you trust Google not to misuse your activity data, after participating in this study?",
+          "isRequired": true,
+          "rateMin": 1,
+          "rateMax": 5,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "name": "A5",
+      "title": "Thoughts About Data Storage",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A5_T1",
+          "html": "<p>In the following section, we will ask you some general questions to learn more about your knowledge of how Google collects and stores your activity data across its services.</p>"
+        },
+        {
+          "type": "html",
+          "name": "A5_T2",
+          "visibleIf": "{A3_Q14} = 'No' or {A3_Q14} = 'I am not sure'",
+          "html": "<p><b>Information:</b> At this stage of the study, we would like to inform you that by default, when you are signed into your Google Account, Google collects a variety of activity data across its products and services (such as Google Search, YouTube, Maps, and Chrome) in order to improve and personalize its services.</p>"
+        },
+        {
+          "type": "checkbox",
+          "name": "A5_Q1",
+          "title": "What pieces of data do you think Google collects when you use its services while signed into your Google Account? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Search queries typed or spoken",
+            "Websites visited in Chrome",
+            "YouTube watch and search history",
+            "Date of activity",
+            "Time of activity",
+            "Approximate location at the time of activity",
+            "Device used (e.g., phone, laptop, tablet)",
+            "App activity and usage details",
+            "Interactions with ads (e.g., ads viewed or clicked)",
+            "Data shared with third-party apps using Google login",
+            "I don’t think Google collects data across services"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "matrix",
+          "name": "A5_Q2",
+          "title": "How comfortable would you feel if Google collected and stored the following categories of activity data across its services?",
+          "isRequired": true,
+          "columns": [
+            "Very comfortable",
+            "Slightly comfortable",
+            "Neither comfortable nor uncomfortable",
+            "Slightly uncomfortable",
+            "Very uncomfortable"
+          ],
+          "rows": [
+            {
+              "value": "A5_Q2_R1",
+              "text": "Search queries typed or spoken"
+            },
+            {
+              "value": "A5_Q2_R2",
+              "text": "Websites visited in Chrome"
+            },
+            {
+              "value": "A5_Q2_R3",
+              "text": "YouTube watch and search history"
+            },
+            {
+              "value": "A5_Q2_R4",
+              "text": "Date of activity"
+            },
+            {
+              "value": "A5_Q2_R5",
+              "text": "Time of activity"
+            },
+            {
+              "value": "A5_Q2_R6",
+              "text": "Approximate location at the time of activity"
+            },
+            {
+              "value": "A5_Q2_R7",
+              "text": "Device used (e.g., phone, laptop, tablet)"
+            },
+            {
+              "value": "A5_Q2_R8",
+              "text": "App activity and usage details"
+            },
+            {
+              "value": "A5_Q2_R9",
+              "text": "Interactions with ads (e.g., ads viewed or clicked)"
+            }
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A5_Q3",
+          "title": "Can you please briefly (1–3 sentences) explain your answer for the categories where you selected “Slightly uncomfortable” or “Very uncomfortable” in the previous question? (Optional)",
+          "isRequired": false,
+          "maxLength": 800
+        },
+        {
+          "type": "radiogroup",
+          "name": "A5_Q4_ACK6",
+          "title": "Earlier, we mentioned the name of the browser extension used in this study. What is it called?",
+          "isRequired": true,
+          "choices": [
+            "ADA (Adaptive Data Dashboard)",
+            "AIDA (Artificial Intelligent Data Assistant)",
+            "ADAA (Advanced Data Analyzer App)",
+            "Not sure"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "A5_Q5",
+          "title": "What pieces of activity data do you think Google collects when you use your Google Account on multiple devices (e.g., phone, laptop, tablet)? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Syncing of browsing history across devices",
+            "Syncing of YouTube watch and search history",
+            "Syncing of app activity across devices",
+            "Device information and login details",
+            "Location history from each device",
+            "Auto-sign-in and password management data",
+            "I don’t think Google collects cross-device data"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "matrix",
+          "name": "A5_Q6",
+          "title": "How comfortable would you feel if Google collected and stored the following categories of cross-device activity data?",
+          "isRequired": true,
+          "columns": [
+            "Very comfortable",
+            "Slightly comfortable",
+            "Neither comfortable nor uncomfortable",
+            "Slightly uncomfortable",
+            "Very uncomfortable"
+          ],
+          "rows": [
+            {
+              "value": "A5_Q6_R1",
+              "text": "Syncing of browsing history across devices"
+            },
+            {
+              "value": "A5_Q6_R2",
+              "text": "Syncing of YouTube watch and search history"
+            },
+            {
+              "value": "A5_Q6_R3",
+              "text": "Syncing of app activity across devices"
+            },
+            {
+              "value": "A5_Q6_R4",
+              "text": "Device information and login details"
+            },
+            {
+              "value": "A5_Q6_R5",
+              "text": "Location history from each device"
+            },
+            {
+              "value": "A5_Q6_R6",
+              "text": "Auto-sign-in and password management data"
+            }
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A5_Q7",
+          "title": "Can you please briefly (1–3 sentences) explain your answer for the categories where you selected “Slightly uncomfortable” or “Very uncomfortable” in the previous question? (Optional)",
+          "isRequired": false,
+          "maxLength": 800
+        },
+        {
+          "type": "radiogroup",
+          "name": "A5_Q8",
+          "title": "Where do you think the activity data collected by Google across its services (e.g., Search, YouTube, Maps, Chrome) is stored?",
+          "isRequired": true,
+          "choices": [
+            "On my device(s)",
+            "On Google’s data storage facilities",
+            "Synced across multiple devices"
+          ],
+          "hasOther": true,
+          "colCount": 4,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "html",
+          "name": "A5_T3",
+          "html": "<p>We would now like to inform you that Google has been increasingly shifting towards more privacy-preserving approaches for managing user data. Traditionally, Google stored detailed activity data on its servers to personalize services and improve user experience across products (such as Search, YouTube, Maps, Chrome, and others). This activity data was accessible to users through the Google “My Activity” dashboard.</p><p>However, due to rising privacy concerns, Google has been introducing more privacy-focused features, such as on-device processing, and restricting certain types of data storage. For example, features like on-device machine learning and privacy-preserving techniques (e.g., Federated Learning) allow some computations to occur on a user’s device, so only aggregated results—not raw data—are shared back with Google services when required. This approach aims to reduce the need to upload full user activity data to Google servers while still enabling useful personalization.</p>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A5_Q9",
+          "title": "In general, which of the following privacy approaches would you prefer for managing your Google activity data (e.g., searches, browsing history, app activity, YouTube history) in the future?",
+          "isRequired": true,
+          "choices": [
+            "Give consent to Google to collect and store all activity data indefinitely, until I choose to delete it",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 3 months",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 18 months",
+            "Store all activity data only on my device, allow required computations to run on-device, and share only aggregated results with Google instead of full data",
+            "Do not give consent to Google to collect or store any of my activity data, and delete any data currently stored by Google immediately",
+            "None of the above"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A5_Q10",
+          "title": "Do you believe that Google ensures the security of the activity data it stores?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A5_Q11_ACK7",
+          "title": "Select “Often” only if you read the instructions carefully. Otherwise select “Never”. How often do you eat chicken for breakfast?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Often",
+            "Rarely",
+            "Never",
+            "Not sure"
+          ]
+        },
+        {
+          "type": "rating",
+          "name": "A5_Q12",
+          "title": "On a scale of 1 to 5, with 1 being the least and 5 being the most, how much do you trust Google not to misuse your activity data?",
+          "isRequired": true,
+          "rateMin": 1,
+          "rateMax": 5,
+          "step": 1
+        },
+        {
+          "type": "radiogroup",
+          "name": "A5_Q13",
+          "title": "Do you think that you can access your activity data collected by Google?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A6",
+      "title": "General Privacy Perception Related Questions",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A6_T1",
+          "html": "<p>In the following section, we will ask you some general questions to learn more about your perceptions regarding the collection, storage, and use of personal data by online service providers and technology companies.</p><p>On a scale of 1 to 5, with 1 being strongly disagree and 5 being strongly agree, express your level of agreement for each of the statements given below.</p><p><i>(1 = Strongly disagree, 5 = Strongly agree)</i></p>"
+        },
+        {
+          "type": "matrix",
+          "name": "A6_Q1",
+          "title": "Please express your level of agreement with the following statements:",
+          "isRequired": true,
+          "columns": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "rowTitleWidth": "250px",
+          "rows": [
+            {
+              "value": "A6_Q1_R1",
+              "text": "Companies that collect users’ online activity data should clearly disclose how the data is collected, stored, and used."
+            },
+            {
+              "value": "A6_Q1_R2",
+              "text": "A good consumer online privacy policy should be easy to understand, transparent, and prominently displayed."
+            },
+            {
+              "value": "A6_Q1_R3",
+              "text": "It is very important to me that I am aware and knowledgeable about how my personal information will be used."
+            },
+            {
+              "value": "A6_Q1_R4",
+              "text": "It usually bothers me when online companies ask me for personal information."
+            },
+            {
+              "value": "A6_Q1_R5",
+              "text": "When online companies ask me for personal information, I sometimes think twice before providing it."
+            },
+            {
+              "value": "A6_Q1_R6",
+              "text": "It bothers me to give personal information to so many online companies."
+            },
+            {
+              "value": "A6_Q1_R7",
+              "text": "I’m concerned that online companies are collecting too much personal information about me."
+            },
+            {
+              "value": "A6_Q1_R8",
+              "text": "I feel that I should have more control over how online companies collect and use my personal information."
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A6_Q2_ACK8",
+          "title": "Select the wrong answer on purpose: What colour is the sky on a clear sunny day?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Green",
+            "Purple",
+            "Pink",
+            "Yellow"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A7",
+      "title": "Installing ADA",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A7_T1",
+          "html": "<p>In this part, you will be asked to install a browser extension that we designed for the research called <b>ADA (Adaptive Data DAshboard)</b>. Follow the instructions given below.</p><p><b>Note:</b> You will <u>NOT</u> be required to share your Google activity data with us at any stage of the study. Specifically, we <b>DO NOT COLLECT</b> information such as your name, address, emails, email address, date of birth, phone number, images, videos, contacts, location data, ZIP/postcode, links to social media accounts or posts. Our study involves interacting with a browser extension that runs entirely on your device and processes your data locally without sending any information outside your browser.</p><p>We will only keep logs of your interaction activity while using the extension, and this does <b>not</b> include any raw data or personal information.</p><p><b>Please follow the steps below to install and set up the ADA browser extension:</b></p><ul><li>Open Google Chrome on your desktop/laptop.</li><li>Log into your Google Account (the one you used in Part 1).</li><li>Visit the extension installation link below:<i> [Extension Link — update as needed]</i></li><li>Click <b>“Add to Chrome” → “Add Extension”.</b></li><li>Once installed, pin the extension to your browser toolbar.</li><li>Open a new tab and visit: <a href='https://myactivity.google.com/' target='_blank'>https://myactivity.google.com/</a></li></ul>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A7_Q1",
+          "title": "Were you able to successfully install and open the ADA extension?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Yes",
+            "No",
+            "Faced some difficulty"
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A7_Q2",
+          "title": "If you faced some difficulty, please briefly (1–3 sentences) explain the issue:",
+          "visibleIf": "{A7_Q1} = 'Faced some difficulty'",
+          "isRequired": false,
+          "rows": 2
+        },
+        {
+          "type": "html",
+          "name": "A7_T2",
+          "html": "<p>Now that you have successfully installed the <b>ADA (Adaptive Data Dashboard)</b> extension, we request you to take a few minutes to explore it. The purpose is simply to help you get familiar with how ADA works. ADA processes your Google Activity data <b>locally on your device</b>, ensuring full privacy while helping you better understand your digital footprint.</p><p><b>As you explore ADA, you may want to try the following:</b></p><ul><li>Open the ADA extension from the Chrome toolbar to view your recent activity entries.</li><li>Wait for the activity to load — ADA scans and organizes your entries directly from the Google “My Activity” page.</li><li>Notice the sensitivity scores displayed next to each activity (higher scores indicate potentially more personal or sensitive data).</li><li>Try at least one feature such as filtering, sorting, viewing details, or navigating through activity items.</li></ul><p>Once you feel familiar with the interface, press the button inside the ADA dashboard that generates a unique <b>6-digit code</b>. Copy and paste that code into the survey when prompted. After submitting the code, you will continue to the First-Use Experience section.</p>"
+        },
+        {
+          "type": "text",
+          "name": "A7_Q3",
+          "title": "Please enter the 6-digit code generated by the ADA dashboard:",
+          "isRequired": true,
+          "inputType": "text",
+          "placeholder": "Enter 6-digit code",
+          "validators": [
+            {
+              "type": "regex",
+              "regex": "^[0-9]{6}$",
+              "text": "Please enter exactly 6 digits."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A8",
+      "title": "First-Use Experience Survey",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A8_T1",
+          "html": "<p>Thank you for trying ADA for the first time. Before you continue to use it over the coming days, we’d love to understand how your initial experience felt. Your responses will help us improve ADA so that it feels even more helpful, intuitive, and comfortable for users like you.</p>"
+        },
+        {
+          "type": "comment",
+          "name": "A8_Q1",
+          "title": "How would you describe your immediate reaction to ADA? (Explain in 1-3 sentences)",
+          "isRequired": true,
+          "maxLength": 600
+        },
+        {
+          "type": "comment",
+          "name": "A8_Q2",
+          "title": "What do you think is the purpose of this browser extension – ADA?",
+          "isRequired": true,
+          "maxLength": 600
+        },
+        {
+          "type": "comment",
+          "name": "A8_Q3",
+          "title": "What task do you think you could accomplish using this browser extension – ADA?",
+          "isRequired": true,
+          "maxLength": 600
+        },
+        {
+          "type": "html",
+          "name": "A8_T2",
+          "html": "<p>On a scale of 1 to 5, with 1 being <b>strongly disagree</b> and 5 being <b>strongly agree</b>, express your level of agreement for each of the statements given below. (1 = Strongly disagree, 5 = Strongly agree)</p>"
+        },
+        {
+          "type": "matrix",
+          "name": "A8_Q4",
+          "title": "System Quality (Data, Recommendations & Clarity)",
+          "isRequired": true,
+          "rowTitleWidth": "250px",
+          "columns": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "rows": [
+            {
+              "value": "A8_Q4_R1",
+              "text": "The activity information shown in ADA regarding my activities felt accurate."
+            },
+            {
+              "value": "A8_Q4_R2",
+              "text": "The activity information shown in ADA regarding my activities felt reliable."
+            },
+            {
+              "value": "A8_Q4_R3",
+              "text": "The recommendations (of sensitive items) provided by the extension (ADA) are accurate."
+            },
+            {
+              "value": "A8_Q4_R4",
+              "text": "The recommendations (of sensitive items) provided by the extension (ADA) are reliable."
+            },
+            {
+              "value": "A8_Q4_R5",
+              "text": "The recommendations provided by the extension match my idea/expectations of how sensitive my browser interactions are."
+            },
+            {
+              "value": "A8_Q4_R6",
+              "text": "I understand why ADA marked certain entries as more sensitive than the others."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "A8_Q5_ACK9",
+          "title": "Add 2 with 4. Now multiply the result by 2. Select the correct answer. Answer:",
+          "isRequired": true,
+          "inputType": "text",
+          "validators": [
+            {
+              "type": "regex",
+              "regex": "^12$",
+              "text": "Please enter the correct answer."
+            }
+          ]
+        },
+        {
+          "type": "matrix",
+          "name": "A8_Q6",
+          "title": "Ease of Use & Interaction Experience",
+          "isRequired": true,
+          "rowTitleWidth": "250px",
+          "columns": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "rows": [
+            {
+              "value": "A8_Q6_R1",
+              "text": "The extension is easy to navigate."
+            },
+            {
+              "value": "A8_Q6_R2",
+              "text": "The extension is easy to interact with."
+            },
+            {
+              "value": "A8_Q6_R3",
+              "text": "The sensitivity scores provided by the extension are easy for me to understand."
+            },
+            {
+              "value": "A8_Q6_R4",
+              "text": "The order in which the recommendations are presented by the browser is easy for me to understand."
+            },
+            {
+              "value": "A8_Q6_R5",
+              "text": "The extension was overall presented in a way that was easy for me to understand."
+            }
+          ]
+        },
+        {
+          "type": "matrix",
+          "name": "A8_Q7",
+          "title": "Perceived Usefulness",
+          "isRequired": true,
+          "rowTitleWidth": "250px",
+          "columns": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "rows": [
+            {
+              "value": "A8_Q7_R1",
+              "text": "ADA helped me understand the potential ‘sensitivity’ of my data quickly."
+            },
+            {
+              "value": "A8_Q7_R2",
+              "text": "ADA helped me notice things about my Google activity that I was not aware of before."
+            },
+            {
+              "value": "A8_Q7_R3",
+              "text": "Using this extension would help me better manage my browsing data."
+            },
+            {
+              "value": "A8_Q7_R4",
+              "text": "Using this extension would help me remove sensitive data from being sent to Google."
+            },
+            {
+              "value": "A8_Q7_R5",
+              "text": "I would be open to using this extension in my day-to-day life."
+            },
+            {
+              "value": "A8_Q7_R6",
+              "text": "I trust the sensitivity predictions provided by the system."
+            },
+            {
+              "value": "A8_Q7_R7",
+              "text": "The sensitivity percentages help me decide which activities to delete."
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A8_Q8",
+          "title": "How comfortable or uncomfortable did you feel while using ADA to view your activity data?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Very comfortable",
+            "Slightly comfortable",
+            "Neither comfortable nor uncomfortable",
+            "Slightly uncomfortable",
+            "Very uncomfortable"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A8_Q9",
+          "title": "Did you feel ADA respected your privacy during its functioning?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "A8_Q10",
+          "title": "Can you please briefly (1–3 sentences) explain your answer choice for the previous question?",
+          "isRequired": false,
+          "maxLength": 600
+        },
+        {
+          "type": "radiogroup",
+          "name": "A8_Q11_ACk10",
+          "title": "Which of the following statements is true about the ADA extension used in this study?",
+          "isRequired": true,
+          "choices": [
+            "ADA sends your Google Activity data to the researchers",
+            "ADA sells your data to third parties",
+            "ADA processes data locally on your device and does not send data outside your browser",
+            "ADA reads your emails and contacts"
+          ]
+        },
+        {
+          "type": "html",
+          "name": "A8_T3",
+          "html": "<p>On a scale of 1 to 5, with 1 being the lowest and 5 being the highest, express your level of agreement with the following statements. (1 = Strongly disagree, 5 = Strongly agree)</p>"
+        },
+        {
+          "type": "matrix",
+          "name": "A8_Q12",
+          "title": "Overall Experience with ADA",
+          "isRequired": true,
+          "rowTitleWidth": "250px",
+          "columns": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "rows": [
+            {
+              "value": "A8_Q12_R1",
+              "text": "How would you rate the overall usability of ADA so far?"
+            },
+            {
+              "value": "A8_Q12_R2",
+              "text": "How confident do you feel using ADA to review your activity data?"
+            },
+            {
+              "value": "A8_Q12_R3",
+              "text": "How mentally effortful was it to use ADA for the first time?"
+            },
+            {
+              "value": "A8_Q12_R4",
+              "text": "How likely are you to continue using ADA over the next 7 days?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A9",
+      "title": "Demographics",
+      "elements": [
+        {
+          "type": "radiogroup",
+          "name": "A9_Q1",
+          "title": "With what gender do you identify?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "Female",
+            "Male",
+            "Non-binary",
+            "Prefer not to answer"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A9_Q2",
+          "title": "What is your age?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Younger than 18",
+            "18–24",
+            "25–34",
+            "35–44",
+            "45–54",
+            "55–64",
+            "65 or older",
+            "I don’t know",
+            "Prefer not to say"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "A9_Q3",
+          "title": "Can you please specify your ethnicity? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "White",
+            "Hispanic or Latino",
+            "Black or African American",
+            "Native American or American Indian",
+            "Asian/Pacific Islander",
+            "Prefer not to answer"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A9_Q4",
+          "title": "What is the highest degree or level of school you have completed?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": [
+            "No formal education",
+            "Nursery school to 8th grade",
+            "Some high school, no diploma",
+            "High school graduate, diploma or equivalent",
+            "Some college credit, no degree",
+            "Trade, technical, or vocational training",
+            "Associate’s degree",
+            "Bachelor’s degree",
+            "Master’s degree",
+            "Professional degree",
+            "Doctorate degree",
+            "Prefer not to answer"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A9_Q5",
+          "title": "What is your employment status?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Student",
+            "Full-time employed",
+            "Part-time employed",
+            "Not employed",
+            "Retired",
+            "Prefer not to answer"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A9_Q6_CSRelatedBackground",
+          "title": "Are you majoring in or do you have a degree or job in computer science, computer engineering, information technology, or a related field?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "Prefer not to answer"
+          ]
+        }
+      ]
+    }
   ]
 }
