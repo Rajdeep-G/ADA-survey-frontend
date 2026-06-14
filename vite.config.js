@@ -6,7 +6,12 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      '/api': 'http://localhost:5001'
+      '/survey/check':       'http://localhost:8000',
+      '/survey/start':       'http://localhost:8000',
+      '/survey/progress':    'http://localhost:8000',
+      '/survey/verify-code': 'http://localhost:8000',
+      '/survey/submit':      'http://localhost:8000',
+      '/healthz':            'http://localhost:8000',
     }
   }
 })

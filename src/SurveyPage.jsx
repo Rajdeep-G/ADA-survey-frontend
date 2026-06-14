@@ -2,17 +2,18 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
-import "survey-core/survey-core.min.css"; // v2.x
-import { submitSurvey } from "./Api";
-import { checkUidExists } from "./Api";
+import "survey-core/survey-core.min.css";
+import { submitSurvey, saveProgress, verifyCode, checkUidExists } from "./Api";
 
-// Helper: prefer ?uid=... then fallback to localStorage
+// ── Which survey.json page names count as subsection completions ─────────────
+// Order matters: index+1 = subsection number.
+// Adjust to match your actual page names in survey.json.
+const SUBSECTION_PAGES = ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9"];
+
 function useUid() {
   const loc = useLocation();
   const params = new URLSearchParams(loc.search);
-  const qUid = params.get("uid");
-  const lsUid = localStorage.getItem("survey_uid");
-  return qUid || lsUid || "";
+  return params.get("uid") || localStorage.getItem("survey_uid") || "";
 }
 
 export default function SurveyPage() {
@@ -21,46 +22,10 @@ export default function SurveyPage() {
   const [schema, setSchema] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+  // Track which subsections have already been saved to avoid duplicate POSTs
+  const savedSubsections = useMemo(() => new Set(), []);
 
-  // Utility: insert a “break page” after a given page name
-  function injectBreakPage(json, afterPageName, breakName, heading, message) {
-    if (!json?.pages?.length) return;
-    const idx = json.pages.findIndex((p) => p.name === afterPageName);
-    if (idx === -1) return;
-
-    const htmlName = `${breakName}_html`;
-    const page = {
-      name: breakName,
-      title: heading,
-      // simple HTML page with our own CTA button
-      elements: [
-        {
-          type: "html",
-          name: htmlName,
-          html: `
-            <div class="section-break">
-              <h2 style="margin-top:0">${heading}</h2>
-              <p style="margin:8px 0 20px">${message}</p>
-              <button id="${breakName}-btn" type="button" style="
-                padding:12px 18px;
-                border:0;border-radius:10px;
-                font-weight:700;cursor:pointer;
-              ">
-                Ready for next section
-              </button>
-            </div>
-          `,
-        },
-      ],
-      // keep navigation visible if you want both options; we’ll hide via CSS below
-      // navigationButtonsVisibility: "hide" // (works in newer builds; if unsure, use CSS hide below)
-    };
-
-    // insert right after the “afterPageName” page
-    json.pages.splice(idx + 1, 0, page);
-  }
-
-  // Load JSON and inject break pages
+  // ── Load survey.json ───────────────────────────────────────────────────────
   useEffect(() => {
     if (!uid) {
       alert("Unique ID missing. Please start from the landing page.");
@@ -68,120 +33,183 @@ export default function SurveyPage() {
       return;
     }
     let cancelled = false;
-
     (async () => {
       try {
+        // Guard: redirect if already completed
+        const alreadyDone = await checkUidExists(uid);
+        if (alreadyDone) {
+          alert(
+            "Our records show that you have already completed this survey. Thank you!",
+          );
+          navigate("/");
+          return;
+        }
+
         const res = await fetch("/survey.json", { cache: "no-store" });
         if (!res.ok) throw new Error("Failed to load survey.json");
         const j = await res.json();
-        const clone = JSON.parse(JSON.stringify(j));
-
-        // // Insert “you finished Section A” between A2 -> B1
-        // injectBreakPage(
-        //   clone,
-        //   "A2",
-        //   "A_BREAK",
-        //   "Section A complete 🎉",
-        //   "Take a breather! When you’re ready, click the button below to start Section B."
-        // );
-
-        // // Insert “you finished Section B” between B2 -> C1
-        // injectBreakPage(
-        //   clone,
-        //   "B2",
-        //   "B_BREAK",
-        //   "Section B complete 🙌",
-        //   "Nice progress so far. Click below when you’re ready to begin Section C."
-        // );
-
-        if (!cancelled) setSchema(clone);
+        if (!cancelled) setSchema(JSON.parse(JSON.stringify(j)));
       } catch (e) {
         if (!cancelled) setError(e.message || "Error loading survey");
       } finally {
         if (!cancelled) setLoading(false);
       }
     })();
-
     return () => {
       cancelled = true;
     };
   }, [uid, navigate]);
 
+  // ── Build model ────────────────────────────────────────────────────────────
   const model = useMemo(() => {
     if (!schema) return null;
     const m = new Model(schema);
 
-    // labels (fallbacks if not present in JSON)
     if (!schema.pageNextText) m.pageNextText = "Next subsection";
     if (!schema.completeText) m.completeText = "Submit";
 
-    // Handle submission
-    m.onComplete.add(async (sender, options) => {
-      try {
-        await submitSurvey({ uid, answers: sender.data });
-        options.showSaveInProgress();
-        options.showSaveSuccess("Thanks! Your response has been recorded.");
-      } catch (e) {
-        console.error(e);
+    // ── On every page change: save progress ──────────────────────────────────
+    m.onCurrentPageChanged.add(async (sender, options) => {
+      const prevPage = options?.oldCurrentPage?.name;
 
-        const trimmed = uid.trim();
-        if (!trimmed) return alert("Please enter your Unique ID.");
-
-        const exists = await checkUidExists(trimmed);
-
-        if (exists) {
-          options.showSaveError(
-            "Our records show that you have already completed this survey. Thank you!"
+      // Save progress whenever leaving a subsection page (once per page)
+      if (
+        prevPage &&
+        SUBSECTION_PAGES.includes(prevPage) &&
+        !savedSubsections.has(prevPage)
+      ) {
+        savedSubsections.add(prevPage);
+        const subsectionIndex = SUBSECTION_PAGES.indexOf(prevPage);
+        try {
+          await saveProgress(uid, prevPage, sender.data);
+          // Also persist to localStorage as backup
+          localStorage.setItem(
+            `survey_progress_${uid}`,
+            JSON.stringify({
+              lastPage: prevPage,
+              subsection: subsectionIndex + 1,
+              answers: sender.data,
+            }),
           );
-          return;
-        } else {
-          options.showSaveError(
-            e.message || "Submission failed. Please try again later."
-          );
+        } catch (e) {
+          console.warn("Failed to save progress", e);
+          // Don't block the user — localStorage already saved
         }
       }
     });
 
-    // Wire the custom “Ready for next section” buttons
+    // ── Per-question render hooks ─────────────────────────────────────────────
     m.onAfterRenderQuestion.add((sender, options) => {
-      // only our HTML “break” questions contain the button
       const el = options?.htmlElement;
       if (!el) return;
 
+      // Wire custom break-page "Ready for next section" buttons
       const btn = el.querySelector('button[id$="-btn"]');
-      if (btn) {
-        btn.onclick = () => sender.nextPage();
-      }
-      // 🔍 make A2_Q8 description clickable
+      if (btn) btn.onclick = () => sender.nextPage();
+
+      // Make A2_Q8 description a clickable link
       if (options.question?.name === "A2_Q8") {
         const desc = el.querySelector(".sd-question__description");
         if (desc) {
           desc.innerHTML =
-            "To know more about what you can do with “My Activity”, you may check: " +
+            'To know more about what you can do with "My Activity", you may check: ' +
             "<a href='https://support.google.com/accounts/answer/7028918' target='_blank'>" +
             "support.google.com/accounts/answer/7028918</a>";
         }
       }
+
+      // ── ADA code input (A7_Q3): force uppercase as user types ────────────────
+      m.onAfterRenderQuestion.add((sender, options) => {
+        if (options.question?.name !== "A7_Q3") return;
+        const input = options?.htmlElement?.querySelector("input");
+        if (!input) return;
+        input.addEventListener("input", () => {
+          input.value = input.value.toUpperCase();
+        });
+      });
+
+      // ── Verify code against server when leaving the page (on Next click) ─────
+      m.onServerValidateQuestions.add(async (sender, options) => {
+        const onCodePage = sender.currentPage?.questions?.some(
+          (q) => q.name === "A7_Q3",
+        );
+        if (!onCodePage) {
+          options.complete();
+          return;
+        }
+
+        const code = (options.data.A7_Q3 || "").trim().toUpperCase();
+
+        if (!/^[A-Z0-9]{6}$/.test(code)) {
+          options.complete();
+          return;
+        }
+
+        // Clear stale errors from previous attempts
+        sender.getQuestionByName("A7_Q3")?.clearErrors();
+
+        let errorMsg = null;
+        try {
+          const result = await verifyCode(uid, code);
+          if (result.ok) {
+            localStorage.setItem(`survey_ada_code_${uid}`, code);
+          } else {
+            errorMsg =
+              result.message ||
+              "Code not recognised. Please check the ADA extension and try again.";
+          }
+        } catch (e) {
+          errorMsg =
+            "Verification failed. Please check your connection and try again.";
+        }
+
+        // Single point of display — set only if there's an error
+        if (errorMsg) {
+          options.errors["A7_Q3"] = errorMsg;
+        }
+
+        options.complete();
+      });
+      // This actually blocks the Next button
     });
 
-    // (Optional) add a body class on break pages to hide default footer buttons
+    // ── Break page body class ─────────────────────────────────────────────────
     const BREAK_PAGES = new Set(["A_BREAK", "B_BREAK"]);
     const updateBodyClass = () => {
-      if (BREAK_PAGES.has(senderCurrentPageName(m))) {
-        document.body.classList.add("break-page");
-      } else {
-        document.body.classList.remove("break-page");
-      }
+      const name = m?.currentPage?.name || "";
+      document.body.classList.toggle("break-page", BREAK_PAGES.has(name));
     };
-    const senderCurrentPageName = (sender) => sender?.currentPage?.name || "";
     m.onCurrentPageChanged.add(updateBodyClass);
-    // run once on init
     updateBodyClass();
 
-    return m;
-  }, [schema, uid]);
+    // ── Final submission ──────────────────────────────────────────────────────
+    m.onComplete.add(async (sender, options) => {
+      options.showSaveInProgress();
+      try {
+        await submitSurvey({ uid, answers: sender.data });
+        localStorage.removeItem("survey_uid");
+        localStorage.removeItem(`survey_progress_${uid}`);
+        options.showSaveSuccess("Thanks! Your response has been recorded.");
+      } catch (e) {
+        console.error(e);
+        const exists = await checkUidExists(uid).catch(() => false);
+        if (exists) {
+          options.showSaveError(
+            "Our records show you have already completed this survey. Thank you!",
+          );
+        } else {
+          options.showSaveError(
+            e.message || "Submission failed. Please try again.",
+          );
+        }
+      }
+    });
 
-  if (loading) {
+    return m;
+  }, [schema, uid, savedSubsections]);
+
+  // ── Render states ──────────────────────────────────────────────────────────
+  if (loading)
     return (
       <div className="container">
         <div className="card">
@@ -192,9 +220,8 @@ export default function SurveyPage() {
         </div>
       </div>
     );
-  }
 
-  if (error) {
+  if (error)
     return (
       <div className="container">
         <div className="card">
@@ -207,7 +234,6 @@ export default function SurveyPage() {
         </div>
       </div>
     );
-  }
 
   if (!model) return null;
 
@@ -215,9 +241,6 @@ export default function SurveyPage() {
     <div className="container">
       <div className="card">
         <h2>Survey</h2>
-        {/* <p className="muted">
-          ID: <b>{uid}</b>
-        </p> */}
         <Survey model={model} />
       </div>
     </div>
