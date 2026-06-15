@@ -91,7 +91,7 @@ export default function Landing() {
           <strong> [email-id] </strong>.
         </p>
 
-        <p>Please enter your <b>PROLIFIC ID</b> to begin.</p>
+        <p>Please enter your <b>PROLIFIC ID</b> to begin. We need this to compensate you for participating in this study.</p>
         <form onSubmit={onStart} className="form">
           <input
             type="text"

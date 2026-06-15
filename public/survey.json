@@ -30,7 +30,6 @@
             "More than 3 years"
           ]
         }
-      
       ]
     },
     {
@@ -59,7 +58,6 @@
           "colCount": 3,
           "otherText": "Other (please specify)"
         }
-      
       ]
     },
     {
@@ -86,7 +84,6 @@
           ],
           "colCount": 3
         }
-        
       ]
     },
     {
@@ -110,7 +107,6 @@
             "Maybe"
           ]
         }
-       
       ]
     },
     {
@@ -150,7 +146,6 @@
           "hasOther": true,
           "otherText": "Other (please specify)"
         }
-       
       ]
     },
     {
@@ -162,7 +157,6 @@
           "name": "A6_T1",
           "html": "<p>In the following section, we will ask you some general questions to learn more about your perceptions regarding the collection, storage, and use of personal data by online service providers and technology companies.</p><p>On a scale of 1 to 5, with 1 being strongly disagree and 5 being strongly agree, express your level of agreement for each of the statements given below.</p><p><i>(1 = Strongly disagree, 5 = Strongly agree)</i></p>"
         },
-       
         {
           "type": "radiogroup",
           "name": "A6_Q2_ACK8",
@@ -210,7 +204,7 @@
         {
           "type": "html",
           "name": "A7_T2",
-          "html": "<p>Now that you have successfully installed the <b>ADA (Adaptive Data Dashboard)</b> extension, we request you to take a few minutes to explore it. The purpose is simply to help you get familiar with how ADA works. ADA processes your Google Activity data <b>locally on your device</b>, ensuring full privacy while helping you better understand your digital footprint.</p><p><b>As you explore ADA, you may want to try the following:</b></p><ul><li>Open the ADA extension from the Chrome toolbar to view your recent activity entries.</li><li>Wait for the activity to load — ADA scans and organizes your entries directly from the Google “My Activity” page.</li><li>Notice the sensitivity scores displayed next to each activity (higher scores indicate potentially more personal or sensitive data).</li><li>Try at least one feature such as filtering, sorting, viewing details, or navigating through activity items.</li></ul><p>Once you feel familiar with the interface, press the button inside the ADA dashboard that generates a unique <b>6-digit code</b>. Copy and paste that code into the survey when prompted. After submitting the code, you will continue to the First-Use Experience section.</p>"
+          "html": "<p>Now that you have successfully installed the <b>ADA (Adaptive Data Dashboard)</b> extension, we request you to take a few minutes to explore it. The purpose is simply to help you get familiar with how ADA works. ADA processes your Google Activity data <b>locally on your device</b>, ensuring full privacy while helping you better understand your digital footprint.</p><p><b>As you explore ADA, you may want to try the following:</b></p><ul><li>Open the ADA extension from the Chrome toolbar to view your recent activity entries.</li><li>Wait for the activity to load — ADA scans and organizes your entries directly from the Google “My Activity” page.</li><li>Notice the sensitivity scores displayed next to each activity (higher scores indicate potentially more personal or sensitive data).</li><li>Try at least one feature such as filtering, sorting, viewing details, or navigating through activity items.</li></ul><p>Once you feel familiar with the interface, press the button inside the ADA dashboard that generates a unique <b>6-digit code</b>. </p><div style='text-align:center; margin:16px 0;'><img src='/p2.png' style='max-width:100%; border-radius:4px;' /></div><p>Copy and paste that code below. After submitting the code, you will continue to the First-Use Experience section.</p>"
         },
         {
           "type": "text",
