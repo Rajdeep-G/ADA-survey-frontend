@@ -214,3 +214,30 @@
     text-align: center;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:        #0D1526;
+    --card:      #172035;
+    --navy:      #E4EAF8;
+    --text:      #C5D0E8;
+    --muted:     #7A8BAD;
+    --accent:    #6B9BF5;
+    --accent-bg: rgba(107,155,245,.12);
+    --border:    #253050;
+  }
+
+  .l-input {
+    background: #1E2C47;
+    color: var(--text);
+  }
+  .l-input:disabled {
+    background: #151f33;
+  }
+  .l-btn {
+    background: #4A7EEE;
+  }
+  .l-btn:hover:not(:disabled) {
+    background: #3568d4;
+  }
+}
